@@ -70,9 +70,14 @@
 
 .contact .form-inner .form-group .group-item textarea {
   height: 10rem;
+  margin: 1.5rem 0;
 }
 
-.contact .form-inner .form-group .group-item span {
+.contact .form-inner .form-group .group-item .message {
+  margin-top: -10rem;
+}
+
+.contact .form-inner .form-group .group-item .text {
   position: absolute;
   color: #eaeaea;
   margin-left: 2rem;
@@ -90,4 +95,24 @@
   border-left: 1px solid #eaeaea;
   padding: 0 1rem;
   transition: all 0.3s;
+}
+
+.contact .form-inner .form-group .group-item textarea:valid ~ span,
+.contact .form-inner .form-group .group-item textarea:focus ~ span {
+  transform: translate(10%, -100%) scale(0.9);
+  background: #222;
+  border-right: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+  padding: 0 1rem;
+  transition: all 0.3s;
+}
+
+.contact .form-inner input[type="submit"] {
+  background: transparent;
+  border: 1px solid #eaeaea;
+  padding: 10px 3rem;
+  margin: 2rem;
+  color: #eaeaea;
+  letter-spacing: 2px;
+  border-radius: 20px;
 }
