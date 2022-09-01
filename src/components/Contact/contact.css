@@ -1,0 +1,92 @@
+.contact {
+  font-family: "Roboto Mono", monospace;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #444;
+}
+.contact .form-inner {
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 4px 8px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact .form-inner header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.contact .form-inner header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #eaeaea;
+}
+
+.contact .form-inner header i {
+  font-size: 2rem;
+  color: #eaeaea;
+}
+.contact .form-inner .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact .form-inner .form-group .group-item {
+  background: transparent;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact .form-inner .form-group .group-item i {
+  color: #eaeaea;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.contact .form-inner .form-group .group-item input,
+.contact .form-inner .form-group .group-item textarea {
+  height: 3rem;
+  width: 100%;
+  resize: none;
+  background: transparent;
+  color: #eaeaea;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contact .form-inner .form-group .group-item textarea {
+  height: 10rem;
+}
+
+.contact .form-inner .form-group .group-item span {
+  position: absolute;
+  color: #eaeaea;
+  margin-left: 2rem;
+  pointer-events: none;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.contact .form-inner .form-group .group-item input:valid ~ span,
+.contact .form-inner .form-group .group-item input:focus ~ span {
+  transform: translate(10%, -100%) scale(0.9);
+  background: #222;
+  border-right: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+  padding: 0 1rem;
+  transition: all 0.3s;
+}
