@@ -23,24 +23,24 @@ function Contact() {
                 <Row className="form-group">
                   <Col className="group-item" xs={11}>
                     <i className="fa-solid fa-user"></i>
-                    <input type="text" name="name" id="name" required="required" value={name} onChange={(e) => setName(e.target.value)} />
+                    <input type="text" name="name" id="name" required="required" value={name} onChange={(e) => setName(e.target.value)} autoComplete="off" />
                     <span className="text name">Name</span>
                   </Col>
 
                   <Col className="group-item" xs={11}>
                     <i className="fa-solid fa-envelope"></i>
-                    <input type="mail" name="mail" id="mail" required="required" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input type="mail" name="mail" id="mail" required="required" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="off" />
                     <span className="text email">Email</span>
                   </Col>
 
                   <Col className="group-item" xs={11}>
                     <i className="fa-solid fa-phone"></i>
-                    <input type="text" name="number" id="number" required="required" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                    <input type="text" name="number" id="number" required="required" value={phone} onChange={(e) => setPhone(e.target.value)} autoComplete="off" />
                     <span className="text phone-number">Phone Number</span>
                   </Col>
 
                   <Col className="group-item" xs={11}>
-                    <textarea name="message" id="message" required="required" value={message} onChange={(e) => setMessage(e.target.value)} />
+                    <textarea name="message" id="message" required="required" value={message} onChange={(e) => setMessage(e.target.value)} autoComplete="off" />
                     <span className="text message">Message</span>
                   </Col>
                 </Row>
